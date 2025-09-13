@@ -1,10 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-import placeholderImg from '../assets/placeholder.png'
-import obtImg from '../assets/obt.png'
-import svdImg from '../assets/svd.png'
-
 export default function Projects() {
   const projects = [
     { 
@@ -96,6 +92,7 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
 
