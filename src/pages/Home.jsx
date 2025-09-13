@@ -5,6 +5,9 @@ import { TypeAnimation } from 'react-type-animation'
 
 // ✅ Import images from src/assets
 import avatar from '../assets/hero-avatar.png'
+import avatar from '../assets/obt.png'
+import avatar from '../assets/placeholder.png'
+import avatar from '../assets/svd.png'
 import resumeFile from '/resume.pdf' // if resume is in public/
 
 export default function Home() {
@@ -93,3 +96,4 @@ export default function Home() {
     </section>
   )
 }
+
