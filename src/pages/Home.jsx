@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 
-// ✅ Import images from src/assets
-import avatar from '../assets/hero-avatar.png'
-import avatar from '../assets/obt.png'
-import avatar from '../assets/placeholder.png'
-import avatar from '../assets/svd.png'
-import resumeFile from '/resume.pdf' // if resume is in public/
+import heroAvatar from '../assets/hero-avatar.png'
+import resumeFile from '/resume.pdf'
 
 export default function Home() {
   return (
@@ -81,7 +77,7 @@ export default function Home() {
         >
           <div className="rounded-2xl p-6 bg-white/60 dark:bg-gray-800/60 border dark:border-gray-700 shadow-lg backdrop-blur-lg transition-colors duration-500">
             <img
-              src={avatar}
+              src={heroAvatar}
               alt="avatar"
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-white dark:border-gray-900 shadow-md transition-transform hover:scale-105 duration-300"
             />
@@ -96,4 +92,3 @@ export default function Home() {
     </section>
   )
 }
-
