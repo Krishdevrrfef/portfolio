@@ -12,7 +12,7 @@ export default function Projects() {
       title: 'Portfolio Website', 
       desc: 'Built with React, Tailwind, and Vite', 
       img: placeholderImg, 
-      live: '#', 
+      live: 'https://portfolio-m1r3ha8ab-krishna-vardhan-reddy-sathis-projects.vercel.app', 
       code: 'https://github.com/Krishdevrrfef' 
     },
     { 
@@ -20,7 +20,7 @@ export default function Projects() {
       title: 'Software Vulnerability Detection Tool', 
       desc: 'Django-based web app with Machine Learning for detecting software vulnerabilities', 
       img: svdImg, 
-      live: '#', 
+      live: 'https://portfolio-m1r3ha8ab-krishna-vardhan-reddy-sathis-projects.vercel.app', 
       code: 'https://github.com/Krishdevrrfef/Software-Vulnerability-Detection-tool' 
     },
     { 
@@ -28,7 +28,7 @@ export default function Projects() {
       title: 'Online Transport Booking', 
       desc: 'This project is built using HTML, CSS, JavaScript (jQuery + Bootstrap + plugins), PHP, and MySQL.', 
       img: obtImg, 
-      live: '#', // change if deployed
+      live: 'https://portfolio-m1r3ha8ab-krishna-vardhan-reddy-sathis-projects.vercel.app', // change if deployed
       code: 'https://github.com/Krishdevrrfef/Online-Booking-Transport' 
     }
   ]
@@ -96,6 +96,7 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
 
