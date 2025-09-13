@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 
 import heroAvatar from '../assets/hero-avatar.png'
-import resumeFile from '/resume.pdf'
+import resumeFile from '/resume.pdf'  // must be in public/resume.pdf
 
 export default function Home() {
   return (
@@ -45,20 +45,33 @@ export default function Home() {
           </motion.p>
 
           {/* Buttons */}
-          <div className="mt-8 flex gap-3">
+          <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/projects"
               className="px-4 py-2 bg-indigo-600 text-white rounded shadow hover:brightness-90 transition-all"
             >
               View Projects
             </Link>
+
+            {/* View Resume (open in new tab) */}
             <a
               href={resumeFile}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border rounded text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+            >
+              View Resume
+            </a>
+
+            {/* Download Resume (force download) */}
+            <a
+              href={resumeFile}
+              download="Krishna_Vardhan_Reddy_Resume.pdf"
               className="px-4 py-2 border rounded text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
             >
               Download Resume
             </a>
+
             <a
               href="mailto:krishnavardhanreddysathi@gmail.com"
               className="px-4 py-2 bg-green-600 text-white rounded shadow hover:brightness-90 transition-all"
