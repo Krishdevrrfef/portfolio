@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 
-import heroAvatar from '../assets/hero-avatar.png'
-import resumeFile from '/resume.pdf'  // must be in public/resume.pdf
-
 export default function Home() {
   return (
     <section className="min-h-[80vh] flex items-center bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500">
@@ -105,3 +102,4 @@ export default function Home() {
     </section>
   )
 }
+
