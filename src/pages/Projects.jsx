@@ -1,30 +1,34 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+import placeholderImg from '../assets/placeholder.png'
+import obtImg from '../assets/obt.png'
+import svdImg from '../assets/svd.png'
+
 export default function Projects() {
   const projects = [
     { 
       id: 1, 
       title: 'Portfolio Website', 
       desc: 'Built with React, Tailwind, and Vite', 
-      img: '/src/assets/placeholder.png', 
-      live: '/index.html', 
-      code: 'https://github.com/Krishdevrrfef/portfolio' 
+      img: placeholderImg, 
+      live: '#', 
+      code: 'https://github.com/Krishdevrrfef' 
     },
     { 
       id: 2, 
       title: 'Software Vulnerability Detection Tool', 
       desc: 'Django-based web app with Machine Learning for detecting software vulnerabilities', 
-      img: '/src/assets/svd.png', // 👈 replace with a screenshot if you have one
-      live: '/index.html', // 👈 add link if you deploy it (Heroku, Render, etc.)
+      img: svdImg, 
+      live: '#', 
       code: 'https://github.com/Krishdevrrfef/Software-Vulnerability-Detection-tool' 
     },
     { 
       id: 3, 
       title: 'Online Transport Booking', 
       desc: 'This project is built using HTML, CSS, JavaScript (jQuery + Bootstrap + plugins), PHP, and MySQL.', 
-      img: '/src/assets/obt.png', // 👈 replace with a screenshot if you have one
-      live: '/index.html', // 👈 add link if you deploy it (Heroku, Render, etc.)
+      img: obtImg, 
+      live: '#', // change if deployed
       code: 'https://github.com/Krishdevrrfef/Online-Booking-Transport' 
     }
   ]
@@ -40,7 +44,6 @@ export default function Projects() {
         Projects
       </motion.h2>
 
-      {/* Project grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
         {projects.map((p, i) => (
           <motion.article
@@ -51,7 +54,6 @@ export default function Projects() {
             whileHover={{ scale: 1.03, boxShadow: '0px 8px 24px rgba(0,0,0,0.15)' }}
             className="relative rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800 border dark:border-gray-700 hover:border-indigo-500 transition-all max-w-md mx-auto"
           >
-            {/* Project Image */}
             <div className="aspect-w-16 aspect-h-9 bg-gray-200 dark:bg-gray-700">
               <img
                 src={p.img}
@@ -60,8 +62,6 @@ export default function Projects() {
                 loading="lazy"
               />
             </div>
-
-            {/* Card Content */}
             <div className="p-4">
               <h3 className="font-bold text-lg">{p.title}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">{p.desc}</p>
@@ -96,5 +96,6 @@ export default function Projects() {
     </section>
   )
 }
+
 
 
