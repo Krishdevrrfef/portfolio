@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 
+// ✅ Import images from src/assets
+import avatar from '../assets/hero-avatar.png'
+import resumeFile from '/resume.pdf' // if resume is in public/
+
 export default function Home() {
   return (
     <section className="min-h-[80vh] flex items-center bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500">
@@ -50,7 +54,7 @@ export default function Home() {
               View Projects
             </Link>
             <a
-              href="/resume.pdf"
+              href={resumeFile}
               download
               className="px-4 py-2 border rounded text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
             >
@@ -70,11 +74,11 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5 }}
-          className="mx-auto w-full max-w-md"
+          className="mx-auto w-full max-w-md md:ml-12"
         >
           <div className="rounded-2xl p-6 bg-white/60 dark:bg-gray-800/60 border dark:border-gray-700 shadow-lg backdrop-blur-lg transition-colors duration-500">
             <img
-              src="/src/assets/hero-avatar.png"
+              src={avatar}
               alt="avatar"
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-white dark:border-gray-900 shadow-md transition-transform hover:scale-105 duration-300"
             />
@@ -89,6 +93,3 @@ export default function Home() {
     </section>
   )
 }
-
-
-
